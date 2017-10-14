@@ -42,7 +42,6 @@ p = fico.hist()
 
 # loansdata['Interest.Rate'] = pd.to_numeric(loansdata['Interest.Rate'], errors='coerce')
 p = loansdata.boxplot('Interest.Rate','FICO.Score')
-p = loansdata.boxplot('Interest.Rate','FICO.Range')
 q = p.set_xticklabels(['640','','','','660','','','','680','','','','700', '720','','','','740','','','','760','','','','780','','','','800','','','','820','','','','840'])
 q0 = p.set_xlabel('FICO Score')
 q1 = p.set_ylabel('Interest Rate %')
